@@ -12,7 +12,6 @@
 @interface ViewController : UIViewController <BLEDelegate>
 {
     IBOutlet UIButton *btnConnect;
-    IBOutlet UILabel *counterLabel;
     IBOutlet UIActivityIndicatorView *indConnecting;
     IBOutlet UILabel *lblRSSI;
 }

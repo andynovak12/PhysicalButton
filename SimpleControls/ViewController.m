@@ -8,13 +8,10 @@
 
 
 #import "ViewController.h"
-#import <AVFoundation/AVFoundation.h>
-#import <AudioToolbox/AudioServices.h>
+
 
 @interface ViewController ()
-@property (strong, nonatomic)AVAudioPlayer *audioPlayer;
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property(nonatomic)NSUInteger counter;
+
 @end
 
 @implementation ViewController
@@ -37,8 +34,6 @@
     ble = [[BLE alloc] init];
     [ble controlSetup];
     ble.delegate = self;
-    self.counter = 0;
-    self.imageView.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,10 +41,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)resetButtonTapped:(id)sender {
-    self.counter = 0;
-    counterLabel.text = [NSString stringWithFormat:@"%lu", self.counter];
-}
+
 
 #pragma mark - BLE delegate
 
@@ -110,18 +102,10 @@ NSTimer *rssiTimer;
         if (data[i] == 0x0A)
         {
             if (data[i+1] == 0x01){
-                //Play audio file on button click
-                [self setUpAVAudioPlayerWithFileName:@"laser_blast"];
-                [self.audioPlayer play];
-                self.counter ++;
-                NSLog([NSString stringWithFormat:@"fire %lu", self.counter]);
-                counterLabel.text = [NSString stringWithFormat:@"%lu", self.counter];
-                self.imageView.hidden = YES;
-                //vibrates phone only on supported devices
-                AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+                NSLog(@"The button was released!");
                 }
             else{
-                self.imageView.hidden = NO;
+                NSLog(@"This gets called when you push down");
             }
         }
         else if (data[i] == 0x0B)
@@ -172,20 +156,6 @@ NSTimer *rssiTimer;
         NSLog(@" HERE Disconnected");
         [btnConnect setTitle:@"Connect" forState:UIControlStateNormal];
         [indConnecting stopAnimating];
-    }
-}
-
-- (void)setUpAVAudioPlayerWithFileName:(NSString *)fileName
-{
-    NSURL *url = [[NSBundle mainBundle] URLForResource:fileName withExtension:@"mp3"];
-    NSError *error = nil;
-    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-    if (!self.audioPlayer)
-    {
-        NSLog(@"Error in audioPlayer: %@",
-              [error localizedDescription]);
-    } else {
-        [self.audioPlayer prepareToPlay];
     }
 }
 

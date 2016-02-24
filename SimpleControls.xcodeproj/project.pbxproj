@@ -23,8 +23,6 @@
 		A1FDD7561C7C21D400C50836 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FDD7551C7C21D400C50836 /* AudioToolbox.framework */; };
 		A1FDD7581C7C224000C50836 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FDD7571C7C224000C50836 /* Images.xcassets */; };
 		A1FDD75A1C7C26E000C50836 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FDD7591C7C26E000C50836 /* AVFoundation.framework */; };
-		A1FDD75C1C7C288500C50836 /* laser_blast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1FDD75B1C7C288500C50836 /* laser_blast.mp3 */; };
-		A1FDD75E1C7D04FE00C50836 /* laserSharkImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A1FDD75D1C7D04FE00C50836 /* laserSharkImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,8 +49,6 @@
 		A1FDD7551C7C21D400C50836 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A1FDD7571C7C224000C50836 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1FDD7591C7C26E000C50836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		A1FDD75B1C7C288500C50836 /* laser_blast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser_blast.mp3; sourceTree = "<group>"; };
-		A1FDD75D1C7D04FE00C50836 /* laserSharkImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laserSharkImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +108,6 @@
 				291C7BC61648AE9100403B08 /* AppDelegate.m */,
 				291C7BCE1648AE9100403B08 /* MainStoryboard.storyboard */,
 				A1FDD7571C7C224000C50836 /* Images.xcassets */,
-				A1FDD75D1C7D04FE00C50836 /* laserSharkImage.png */,
 				291C7BBD1648AE9100403B08 /* Supporting Files */,
 			);
 			path = SimpleControls;
@@ -121,7 +116,6 @@
 		291C7BBD1648AE9100403B08 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1FDD75B1C7C288500C50836 /* laser_blast.mp3 */,
 				291C7BBE1648AE9100403B08 /* SimpleControls-Info.plist */,
 				291C7BBF1648AE9100403B08 /* InfoPlist.strings */,
 				291C7BC21648AE9100403B08 /* main.m */,
@@ -201,11 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				291C7BC11648AE9100403B08 /* InfoPlist.strings in Resources */,
-				A1FDD75E1C7D04FE00C50836 /* laserSharkImage.png in Resources */,
 				291C7BC91648AE9100403B08 /* Default.png in Resources */,
 				291C7BCB1648AE9100403B08 /* Default@2x.png in Resources */,
 				A1FDD7581C7C224000C50836 /* Images.xcassets in Resources */,
-				A1FDD75C1C7C288500C50836 /* laser_blast.mp3 in Resources */,
 				291C7BCD1648AE9100403B08 /* Default-568h@2x.png in Resources */,
 				291C7BD01648AE9100403B08 /* MainStoryboard.storyboard in Resources */,
 			);

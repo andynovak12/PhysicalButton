@@ -18,18 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Number of Shots Fired" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6u-kf-oRR">
-                                <rect key="frame" x="74" y="274" width="173" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGf-rN-Zc0">
-                                <rect key="frame" x="155" y="303" width="10.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amg-mZ-kBR">
                                 <rect key="frame" x="131" y="411" width="59" height="30"/>
                                 <state key="normal" title="Connect">
@@ -67,45 +55,21 @@
                                     <constraint firstItem="uXY-xl-iSl" firstAttribute="centerY" secondItem="6Qk-q1-WjR" secondAttribute="centerY" id="kxk-Z4-2mj"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laserSharkImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="8dv-2N-1l4">
-                                <rect key="frame" x="40" y="121" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="dYS-0b-oF5"/>
-                                    <constraint firstAttribute="height" constant="128" id="e5o-Y4-m8u"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivI-Q4-0yQ">
-                                <rect key="frame" x="140" y="338" width="39" height="30"/>
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="resetButtonTapped:" destination="yJk-Mk-xo2" eventType="touchUpInside" id="58u-dq-Yas"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o6R-PA-ISX" firstAttribute="centerX" secondItem="amg-mZ-kBR" secondAttribute="centerX" id="Awy-B9-0ZB"/>
                             <constraint firstItem="6Qk-q1-WjR" firstAttribute="centerX" secondItem="hbR-7x-UN8" secondAttribute="centerX" id="Hhs-kf-N9d"/>
-                            <constraint firstItem="W6u-kf-oRR" firstAttribute="centerX" secondItem="hbR-7x-UN8" secondAttribute="centerX" id="Lwh-Wo-pSt"/>
                             <constraint firstItem="6Qk-q1-WjR" firstAttribute="top" secondItem="hK9-Bo-zK5" secondAttribute="bottom" id="N60-qT-btk"/>
                             <constraint firstItem="amg-mZ-kBR" firstAttribute="centerX" secondItem="hbR-7x-UN8" secondAttribute="centerX" id="OIG-bN-Y1o"/>
-                            <constraint firstItem="tGf-rN-Zc0" firstAttribute="top" secondItem="W6u-kf-oRR" secondAttribute="bottom" constant="8" id="Zdk-9M-EUX"/>
                             <constraint firstItem="o6R-PA-ISX" firstAttribute="top" secondItem="amg-mZ-kBR" secondAttribute="bottom" constant="10" id="aX5-ME-TFf"/>
-                            <constraint firstItem="ivI-Q4-0yQ" firstAttribute="centerX" secondItem="hbR-7x-UN8" secondAttribute="centerX" id="h2k-nL-yan"/>
-                            <constraint firstItem="8dv-2N-1l4" firstAttribute="centerY" secondItem="hbR-7x-UN8" secondAttribute="centerY" multiplier="0.65" id="j9H-FZ-euy"/>
                             <constraint firstItem="amg-mZ-kBR" firstAttribute="centerY" secondItem="hbR-7x-UN8" secondAttribute="centerY" multiplier="1.5" id="mZ9-h6-Ys6"/>
                             <constraint firstItem="6Qk-q1-WjR" firstAttribute="height" secondItem="hbR-7x-UN8" secondAttribute="height" multiplier="0.2" id="r99-xt-8UQ"/>
-                            <constraint firstItem="tGf-rN-Zc0" firstAttribute="centerX" secondItem="hbR-7x-UN8" secondAttribute="centerX" id="t6L-5v-d40"/>
-                            <constraint firstItem="W6u-kf-oRR" firstAttribute="centerY" secondItem="hbR-7x-UN8" secondAttribute="centerY" id="xtR-Li-pgJ"/>
-                            <constraint firstItem="8dv-2N-1l4" firstAttribute="centerX" secondItem="hbR-7x-UN8" secondAttribute="centerX" id="xwb-63-jJa"/>
                             <constraint firstItem="6Qk-q1-WjR" firstAttribute="width" secondItem="hbR-7x-UN8" secondAttribute="width" id="zC2-lz-l3g"/>
-                            <constraint firstItem="ivI-Q4-0yQ" firstAttribute="top" secondItem="tGf-rN-Zc0" secondAttribute="bottom" constant="15" id="zEA-aH-A5B"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnConnect" destination="amg-mZ-kBR" id="Alw-uE-TE2"/>
-                        <outlet property="counterLabel" destination="tGf-rN-Zc0" id="1q7-8I-KaL"/>
-                        <outlet property="imageView" destination="8dv-2N-1l4" id="qqW-Tq-8gj"/>
                         <outlet property="indConnecting" destination="o6R-PA-ISX" id="lry-rv-pHV"/>
                         <outlet property="lblRSSI" destination="uXY-xl-iSl" id="JGd-aJ-MDW"/>
                     </connections>
@@ -115,7 +79,4 @@
             <point key="canvasLocation" x="599" y="118"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="laserSharkImage.png" width="619" height="307"/>
-    </resources>
 </document>
